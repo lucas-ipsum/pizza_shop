@@ -2,17 +2,20 @@
     <h1 class="category-title">Pizza Style</h1>
     <hr>
     <div class="wrapper">
-        <SelectionIcon title="Italienisch"/>
-        <SelectionIcon title="Amerikanisch"/>
+        <SelectionIcon title="Italienisch" logo="src/assets/icons/italy.png"/>
     </div>
 </template>
 
 <script>
 import SelectionIcon from './SelectionIcon.vue';
+    import usLogo from "../assets/icons/american.png"
+//         <SelectionIcon title="Amerikanisch" :logo="../assets/icons/american.png"/>
+
 
     export default {
     name: "PizzaStyle",
-    components: { SelectionIcon }
+    components: { SelectionIcon },
+
 }
 </script>
 
