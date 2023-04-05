@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="select-btn">
             <section>
-                <h1>Italienisch</h1>
+                <h1>{{ title }}</h1>
             </section>
             <section>
                 <img src="../assets/icons/italy.png" :width="40" alt="" />
@@ -13,7 +13,10 @@
 
 <script>
     export default {
-        name : 'SelectionIcon'
+        name : 'SelectionIcon',
+        props: {
+            title: String
+        }
     }
 </script>
 
@@ -35,6 +38,7 @@
 
  }
  h1 {
+    font-size: x-large;
     color: black;
  }
  section {
