@@ -1,16 +1,18 @@
 <template>
-    <h1 class="category-title">Pizza Style</h1>
+    <h1 class="category-title">Teigart auswählen</h1>
     <hr>
     <div class="wrapper">
-        <SelectionIcon title="Italienisch" logo="src/assets/icons/italy.png"/>
-        <SelectionIcon title="Amerikanisch" logo="src/assets/icons/american.png"/>
+        <SelectionIcon title="Standard" logo="src/assets/icons/italy.png"/>
+        <SelectionIcon title="Vollkorn" logo="src/assets/icons/american.png"/>
+        <SelectionIcon title="Sauerteig" logo="src/assets/icons/american.png"/>
+
     </div>
 </template>
 
 <script>
     import SelectionIcon from './SelectionIcon.vue';
     export default {
-    name: "PizzaStyle",
+    name: "DoughType",
     components: { SelectionIcon },
 
 }

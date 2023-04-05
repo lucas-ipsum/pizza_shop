@@ -3,14 +3,14 @@
   import Header from './components/Header.vue';
   import SelectionIcon from './components/SelectionIcon.vue'
 import PizzaStyle from './components/PizzaStyle.vue';
+import DoughType from './components/DoughType.vue';
 </script>
 
 <template>
   <Header /> 
   <SelectionIcon /> 
   <PizzaStyle />
-  <Test />  
-
+  <DoughType />
 </template>
 
 <style scoped>
