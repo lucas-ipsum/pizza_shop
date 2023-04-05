@@ -1,5 +1,11 @@
 <template>
     <div class="wrapper">
+        <section>
+            <h2>Italienisch</h2>
+        </section>
+        <section>
+            <img src="../assets/icons/pizza.png" :width="75" alt="" />
+        </section>
         <h1>Hallo</h1>
     </div>
 </template>
@@ -21,7 +27,7 @@
  }
  div:hover {
     border: solid orange;
-    
+
  }
  h1 {
     color: black;
