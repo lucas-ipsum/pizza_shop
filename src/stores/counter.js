@@ -1,6 +1,7 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
+/*
 export const useCounterStore = defineStore('counter', () => {
   const count = ref(0)
   const doubleCount = computed(() => count.value * 2)
@@ -9,4 +10,22 @@ export const useCounterStore = defineStore('counter', () => {
   }
 
   return { count, doubleCount, increment }
+})
+*/ 
+
+
+export const userCartStore = defineStore('cart',{
+  state: () => ({
+    style: 'Italian'
+  }),
+  getters: {
+    getCart: (state) => {
+      return state.cart
+    }
+  }, 
+  actions: {
+    addToCart() {
+      // this.cart
+    }
+  }
 })
