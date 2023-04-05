@@ -29,6 +29,7 @@
     border-radius: 5%;
     color: black;
     max-width: 200px;
+    min-width: 110px;
     height: 100px;
     display: flex;
     flex-direction: column;
