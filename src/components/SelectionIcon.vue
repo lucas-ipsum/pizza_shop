@@ -12,9 +12,6 @@
 </template>
 
 <script>
-    // Icon Imports                         <img src={{ logo }} :width="40"> <img src="../assets/icons/italy.png" :width="40" alt="" />
-    // <img :src="require(`../assets/icons/'${{logo}}`)" :width="40">
-    // <img src="../assets/icons/italy.png" :width="40" alt="" />
     export default {
         name : 'SelectionIcon',
         props: {
@@ -22,11 +19,6 @@
             logo: String
         }, 
     }
-    function getImageUrl() {
-    // This path must be correct for your file
-    return new URL(`../assets/icons/${props.logo}`, import.meta.url)
-}
-
 </script>
 
 <style scoped>
