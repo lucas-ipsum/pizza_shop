@@ -6,14 +6,18 @@
 
 <template>
   <Header /> 
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />    
-  </header>
   <SelectionIcon /> 
   <Test />  
 
 </template>
 
 <style scoped>
-
+  html {
+    background-color: black;
+  }
+  template {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+  }
 </style>
