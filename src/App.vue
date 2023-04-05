@@ -3,10 +3,12 @@
   import PizzaStyle from './components/PizzaStyle.vue';
   import DoughType from './components/DoughType.vue';
   import Toppings from './components/Toppings.vue';
+  import CurrentShoppingCart from './components/CurrentShoppingCart.vue';
 </script>
 
 <template>
   <Header /> 
+  <CurrentShoppingCart /> 
   <PizzaStyle />
   <DoughType />
   <Toppings />

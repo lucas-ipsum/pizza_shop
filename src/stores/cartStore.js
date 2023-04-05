@@ -14,18 +14,16 @@ export const useCounterStore = defineStore('counter', () => {
 */ 
 
 
-export const userCartStore = defineStore('cart',{
+export const userCartStore = defineStore('cartList',{
   state: () => ({
-    style: 'Italian'
+    cartList: []
   }),
-  getters: {
-    getCart: (state) => {
-      return state.cart
-    }
-  }, 
   actions: {
-    addToCart() {
+    addToCart(item) {
+      // const created = {style: style};
+      // this.cart = [created, ...this.cart]
       // this.cart
+      this.cartList.push({item})
     }
   }
 })
