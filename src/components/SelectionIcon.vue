@@ -1,12 +1,13 @@
 <template>
     <div class="wrapper">
-        <section>
-            <h2>Italienisch</h2>
-        </section>
-        <section>
-            <img src="../assets/icons/pizza.png" :width="75" alt="" />
-        </section>
-        <h1>Hallo</h1>
+        <div class="select-btn">
+            <section>
+                <h1>Italienisch</h1>
+            </section>
+            <section>
+                <img src="../assets/icons/italy.png" :width="40" alt="" />
+            </section>
+        </div>
     </div>
 </template>
 
@@ -17,19 +18,26 @@
 </script>
 
 <style scoped>
- div {
+ .select-btn {
     margin: '5px';
+    padding: '5px';
     background-color: aliceblue;
     border-radius: 5%;
     color: black;
     max-width: 200px;
     height: 100px;
+    display: flex;
+    flex-direction: column;
  }
- div:hover {
+ .select-btn:hover {
     border: solid orange;
+    cursor: pointer;
 
  }
  h1 {
     color: black;
+ }
+ section {
+    align-self: center;
  }
 </style>
