@@ -1,33 +1,31 @@
 <template>
     <div class="wrapper">
-        <h1>CART</h1>
+        <div class="p-3 w-1/2 min-h-full max-h-fit border">
+            <h1 class="font-bold">Aktuelle Pizza</h1>
+
+
+            <Chip text="Hallo"/> 
+            <Chip text="Hallo"/> 
+            <Chip text="Hallo"/> 
+
+            <h1>{{ cartStore.cart.toppings }}</h1>
+
+        </div>
 
     </div>
 </template>
 
 <script>
-import {computed} from "vue";
-import {userCartStore} from '../stores/cartStore';
-import { ref } from "vue";
+import { useCartStore } from '../stores/cartStore';             // import Store 
+import Chip from './Chip.vue';
 
     export default {
         name : 'CurrentShoppingCart',
+        components: { Chip },
         setup() {
-            // const cart = ref('')
-            const store = userCartStore()
+            const cartStore = useCartStore(); 
 
-
-            function addToCart(item) {
-                store.addToCart('TEST')
-            }
-            /*
-            const store = userCartStore()
-            console.log(store)
-            const showCart = computed(() => store.$state.style);
-            const cartList = computed(() => store.$state.cart)
-            console.log('first')
-            console.log(cartList)
-            */
+            return { cartStore }
         }
 
     }

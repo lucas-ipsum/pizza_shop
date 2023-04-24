@@ -5,7 +5,6 @@
         <SelectionIcon title="Standard" logo="src/assets/icons/standard_dough.png"/>
         <SelectionIcon title="Vollkorn" logo="src/assets/icons/whole_grain.png"/>
         <SelectionIcon title="Sauerteig" logo="src/assets/icons/sour_dough.png"/>
-
     </div>
 </template>
 
@@ -14,7 +13,6 @@
     export default {
     name: "DoughType",
     components: { SelectionIcon },
-
 }
 </script>
 
