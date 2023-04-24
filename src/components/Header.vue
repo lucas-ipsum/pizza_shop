@@ -1,8 +1,7 @@
 <template>
     <div class="wrapper">
         <header>
-            <img src="../assets/icons/pizza.png" :width="75" alt="" />
-            <h1>Pizza App</h1>
+            <img class="mb-3" src="../assets/icons/pizza.png" :width="75" alt="" />
         </header>
     </div>
 </template>
