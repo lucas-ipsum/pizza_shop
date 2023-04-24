@@ -6,5 +6,10 @@ export const useCartStore = defineStore('cartStore',{
     style: 'Italian',
     doughType: 'Vollkorn',
     toppings: ['Cheese', 'Mais']
-  })
+  }),
+  actions: {
+    setStyle (style)  {
+      return this.state.style = style;
+    }
+  }
 })

@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="select-btn">
+        <div class="select-btn" type="button" v-on:click="setElement()">
             <section>
                 <h1>{{ title }}</h1>
             </section>
@@ -14,10 +14,19 @@
 <script>
     export default {
         name : 'SelectionIcon',
+
         props: {
             title: String,
             logo: String
         }, 
+
+        methods: {
+        // clickEent
+        // clickEent
+            setElement: function() {
+                console.log(this.title)                     // Gets Current Name on click 
+            },
+        }
     }
 </script>
 
