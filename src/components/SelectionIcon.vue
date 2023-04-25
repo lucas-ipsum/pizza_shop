@@ -5,7 +5,7 @@
                 <h1>{{ title }}</h1>
             </section>
             <section>
-                <img :src=logo :width="40" alt="">
+                <img :src="`/icons/${logo}`" :width="40" alt="">
             </section>
         </div>
     </div>

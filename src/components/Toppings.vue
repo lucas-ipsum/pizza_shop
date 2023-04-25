@@ -2,13 +2,13 @@
     <h1 class="category-title">Toppings auswählen</h1>
     <hr>
     <div class="wrapper">
-        <SelectionIcon category="toppings" title="Salami" logo="src/assets/icons/salami.png"/>
-        <SelectionIcon category="toppings" title="Paprika" logo="src/assets/icons/paprika.png"/>
-        <SelectionIcon category="toppings" title="Knoblauch" logo="src/assets/icons/knoblauch.png"/>
+        <SelectionIcon category="toppings" title="Salami" logo="salami.png"/>
+        <SelectionIcon category="toppings" title="Paprika" logo="paprika.png"/>
+        <SelectionIcon category="toppings" title="Knoblauch" logo="knoblauch.png"/>
     </div>
     <diw class="wrapper">
-        <SelectionIcon category="toppings" title="Käse" logo="src/assets/icons/kase.png"/>
-        <SelectionIcon category="toppings" title="Mais" logo="src/assets/icons/mais.png"/>
+        <SelectionIcon category="toppings" title="Käse" logo="kase.png"/>
+        <SelectionIcon category="toppings" title="Mais" logo="mais.png"/>
     </diw>
 </template>
 

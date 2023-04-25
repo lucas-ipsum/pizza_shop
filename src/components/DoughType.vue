@@ -2,17 +2,18 @@
     <h1 class="category-title">Teigart auswählen:</h1>
     <hr>
     <div class="wrapper">
-        <SelectionIcon category="doughType" title="Standard" logo="public/icons/standard_dough.png"/>
-        <SelectionIcon category="doughType" title="Vollkorn" logo="public/icons/whole_grain.png"/>
-        <SelectionIcon category="doughType" title="Sauerteig" logo="public/icons/sour_dough.png"/>
+        <SelectionIcon category="doughType" title="Standard" logo="standard_dough.png"/>
+        <SelectionIcon category="doughType" title="Vollkorn" logo="whole_grain.png"/>
+        <SelectionIcon category="doughType" title="Sauerteig" logo="sour_dough.png"/>
     </div>
 </template>
 
 <script>
     import SelectionIcon from './SelectionIcon.vue';
+    // import standardImage from '@/src/assets/icons/standard_dough.png';
     export default {
-    name: "DoughType",
-    components: { SelectionIcon },
+        name: "DoughType",
+        components: { SelectionIcon },
 }
 </script>
 
