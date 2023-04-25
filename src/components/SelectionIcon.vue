@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="select-btn" type="button" v-on:click="setElement()">
+        <div id="btn" class="select-btn" type="button" v-on:click="setElement()">
             <section>
                 <h1>{{ title }}</h1>
             </section>
@@ -30,6 +30,8 @@ import { useCartStore } from '../stores/cartStore';
                     cartStore.setStyle(this.title);
                 } else if (this.category === 'doughType') {
                     cartStore.setDoughType(this.title);
+                } else if (this.category === 'toppings') {
+                    cartStore.addToppings(this.title); 
                 }
             },
         }

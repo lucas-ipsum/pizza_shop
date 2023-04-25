@@ -5,7 +5,7 @@ export const useCartStore = defineStore('cartStore',{
   state: () => ({
     style: '',
     doughType: '',
-    toppings: ['Cheese', 'Mais']
+    toppings: []
   }),
   actions: {
     setStyle (style) {
@@ -13,6 +13,17 @@ export const useCartStore = defineStore('cartStore',{
     },
     setDoughType (type) {
       this.doughType = type;
+    },
+    addToppings (topping) {
+      // Checks if element already in store
+      if (this.toppings.find(el => el === topping) !== topping) {
+        this.toppings.push(topping);
+      } else {
+        // on double click remove element 
+        this.toppings = this.toppings.filter(el => {
+          return el !== topping;
+        })
+      }
     }
   }
 })
