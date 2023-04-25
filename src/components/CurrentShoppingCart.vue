@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="p-3 w-1/2 min-h-full max-h-fit border">
+        <div class="p-3 md:w-1/2 sm:w-fit sm:min-w-9/12 min-h-full max-h-fit border">
             <h1 class="font-bold">Aktuelle Pizza</h1>
         <!-- Section Pizza Toppings -->
             <hr>
