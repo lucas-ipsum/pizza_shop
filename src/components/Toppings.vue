@@ -1,5 +1,5 @@
 <template>
-    <h1 class="category-title">Teigart auswählen</h1>
+    <h1 class="category-title">Toppings auswählen</h1>
     <hr>
     <div class="wrapper">
         <SelectionIcon category="toppings" title="Salami" logo="src/assets/icons/salami.png"/>

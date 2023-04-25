@@ -2,9 +2,9 @@
     <h1 class="category-title">Teigart auswählen</h1>
     <hr>
     <div class="wrapper">
-        <SelectionIcon category="doughType" title="Standard" logo="src/assets/icons/standard_dough.png"/>
-        <SelectionIcon category="doughType" title="Vollkorn" logo="src/assets/icons/whole_grain.png"/>
-        <SelectionIcon category="doughType" title="Sauerteig" logo="src/assets/icons/sour_dough.png"/>
+        <SelectionIcon category="doughType" title="Standard" logo="public/icons/standard_dough.png"/>
+        <SelectionIcon category="doughType" title="Vollkorn" logo="public/icons/whole_grain.png"/>
+        <SelectionIcon category="doughType" title="Sauerteig" logo="public/icons/sour_dough.png"/>
     </div>
 </template>
 
