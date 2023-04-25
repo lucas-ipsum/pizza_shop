@@ -1,5 +1,5 @@
 <template>
-    <h1 class="category-title">Teigart auswählen</h1>
+    <h1 class="category-title">Teigart auswählen:</h1>
     <hr>
     <div class="wrapper">
         <SelectionIcon category="doughType" title="Standard" logo="public/icons/standard_dough.png"/>
