@@ -4,7 +4,7 @@
             <h1 class="font-bold">Aktuelle Pizza</h1>
         <!-- Section Pizza Toppings -->
             <hr>
-            <div class="flex flex-row my-2">
+            <div class="flex flex-row my-2 overflow-x-auto">
                 <div  v-if="cartStore.style">
                     <Chip :text="cartStore.style"/>  
                 </div>
