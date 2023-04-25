@@ -3,13 +3,16 @@ import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cartStore',{
   state: () => ({
-    style: 'Italian',
-    doughType: 'Vollkorn',
+    style: '',
+    doughType: '',
     toppings: ['Cheese', 'Mais']
   }),
   actions: {
-    setStyle (style)  {
-      return this.state.style = style;
+    setStyle (style) {
+      this.style = style;
+    },
+    setDoughType (type) {
+      this.doughType = type;
     }
   }
 })

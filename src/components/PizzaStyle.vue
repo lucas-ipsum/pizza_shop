@@ -2,8 +2,8 @@
     <h1 class="category-title">Pizza Style</h1>
     <hr>
     <div class="wrapper">
-        <SelectionIcon title="Italienisch" logo="src/assets/icons/italy.png"/>
-        <SelectionIcon title="Amerikanisch" logo="src/assets/icons/american.png"/>
+        <SelectionIcon category="style" title="Italienisch" logo="src/assets/icons/italy.png"/>
+        <SelectionIcon category="style" title="Amerikanisch" logo="src/assets/icons/american.png"/>
     </div>
 </template>
 

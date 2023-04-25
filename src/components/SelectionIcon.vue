@@ -12,19 +12,25 @@
 </template>
 
 <script>
+import { useCartStore } from '../stores/cartStore';
+
     export default {
         name : 'SelectionIcon',
 
         props: {
             title: String,
-            logo: String
+            logo: String,
+            category: String
         }, 
-
         methods: {
-        // clickEent
-        // clickEent
+        // clickEvent
             setElement: function() {
-                console.log(this.title)                     // Gets Current Name on click 
+                const cartStore = useCartStore()    
+                if (this.category === 'style') {
+                    cartStore.setStyle(this.title);
+                } else if (this.category === 'doughType') {
+                    cartStore.setDoughType(this.title);
+                }
             },
         }
     }
